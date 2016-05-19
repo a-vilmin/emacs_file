@@ -1,4 +1,5 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(add-to-list 'load-path "~/.emacs.d/neotree")
 (load "~/.emacs.d/init.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -23,3 +24,5 @@
 (require 'ido)
 (ido-mode t)
 
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
