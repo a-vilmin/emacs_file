@@ -1,0 +1,5 @@
+(package-initialize)
+(setq custom-safe-themes t)
+(load-theme 'ubuntu t)
+(elpy-enable)
+(setq python-check-command (expand-file-name "~/.local/bin/flake8"))
